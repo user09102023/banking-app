@@ -68,12 +68,12 @@
     </dependency>
   </dependencies>
 
-  <pluginRepositories>
+  <!--<pluginRepositories>
     <pluginRepository>
       <id>spring-snapshots</id>
       <url>http://repo.spring.io/snapshot</url>
     </pluginRepository>
-  </pluginRepositories>
+  </pluginRepositories>-->
 
   <build>
     <resources>
