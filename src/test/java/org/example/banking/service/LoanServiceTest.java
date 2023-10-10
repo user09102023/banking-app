@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootTest(classes = TestApplication.class)
 @ActiveProfiles("test")
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class LoanServiceIT {
+public class LoanServiceTest {
 
   @Autowired
   private LoanService loanService;
