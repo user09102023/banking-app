@@ -1,14 +1,27 @@
-Please NOTE: This is not a real-life project and these are not real-life requirements
 
-Pre-requisites: 
-java 11, java executable on Path variable.
-Maven and access to repos with required dependencies.
 
-Build: run maven-build.bat from the project root directory.
+Software Pre-requisites: 
+java 11
+Maven
+git
 
-Run: run example-start.bat - runs as stand-alone executable jar.
+Build: mvn clean install.
+
+Run: java -jar ./target/loan-services-spring-boot.jar
 
 Usage notes:
+
+Curl command (windows bash shell) or linux
+
+1.	Get loan balance
+curl http://localhost:8080/banking/loan/balance/123
+
+2) Add a new loan to database
+
+curl -i -X POST -d '{"customerId":"123","loanAmount":"5000.00","customerName":"John Doe"}' -H "Content-Type:application/json" http://localhost:8080/banking/loan/create
+
+Alternative usage options:
+
 Sending create loan post request should be done via Postman or alternative with Content-Type set to application/json.
 
 http://localhost:8080/banking/loan/create
@@ -21,4 +34,3 @@ Sample json create loan request:
 
 Getting total loan amounts can be done via the browser:
 http://localhost:8080/banking/loan/balance/123
-
