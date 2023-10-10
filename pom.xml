@@ -103,7 +103,6 @@
               <finalName>loan-services</finalName>
               <classifier>spring-boot</classifier>
               <executable>true</executable>
-              <layout>ZIP</layout>
               <mainClass>
                 org.example.banking.BankingApplication
               </mainClass>
