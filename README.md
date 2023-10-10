@@ -9,6 +9,8 @@ Build: mvn clean install.
 
 Run: java -jar ./target/loan-services-spring-boot.jar
 
+Database is created under user_home/db/loandb, ex C:/users/example_user/db/loandb.mv.db
+
 Usage notes:
 
 Curl command (windows bash shell) or linux
